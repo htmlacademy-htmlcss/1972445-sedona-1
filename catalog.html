@@ -7,10 +7,11 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="navigation">
+
     <a class="page-header-logo-link" href="index.html">
       <img class="page-header-logo" src="#" alt="логотип сайта-Седона">
     </a>
+    <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link active">
@@ -159,6 +160,7 @@
   <a href="#" class="button button-list">
     <span class="visually-hidden">Показать список</span>
   </a>
+  <h2 class="visually-hidden">section-search</h2>
   <ul class="hotel-card-list">
     <li class="hotel-card-item">
       <a class="hotel-card-link">
@@ -171,9 +173,9 @@
       <a class="button btn-more" href="#">
         подробнее
       </a>
-      <a class="button btn-favorites" href="#">
+      <button type="button" class="button btn-favorites" name="favorites">
         в избранное
-      </a>
+      </button>
       <div class="rating-result">
         <span class=""></span>
         <span class=""></span>
@@ -215,9 +217,7 @@
       <a class="button btn-more" href="#">
         подробнее
       </a>
-      <a class="button btn-favorites" href="#">
-        в избранное
-      </a>
+      <button type="button" class="button btn-favorites" name="favorites">в избранное</button>
       <div class="rating-result">
         <span class=""></span>
         <span class=""></span>
@@ -236,9 +236,9 @@
       <a class="button btn-more" href="#">
         подробнее
       </a>
-      <a class="button btn-favorites" href="#">
+      <button type="button" class="button btn-favorites" name="favorites">
         в избранное
-      </a>
+      </button>
       <div class="rating-result">
         <span class=""></span>
         <span class=""></span>
@@ -246,22 +246,18 @@
       <p>Рейтинг: 5,0</p>
     </li>
   </ul>
-  <ul class="pagination-list">
+  <ol class="pagination-list">
     <li class="pagination-item">
       <a class="pagination-link pagination-current">1</a>
-      </a>
     </li>
     <li class="pagination-item">
-      <a class="pagination-link pagination-current">2</a>
-      </a>
+      <a class="pagination-link">2</a>
     </li>
     <li class="pagination-item">
-      <a class="pagination-link pagination-current">3</a>
-      </a>
+      <a class="pagination-link">3</a>
     </li>
     <li class="pagination-item">
-      <a class="pagination-link pagination-current">4</a>
-      </a>
+      <a class="pagination-link">4</a>
     </li>
     <li class="pagination-item">
       <a class="pagination-link pagination-next">
@@ -272,9 +268,8 @@
     </li>
     <li class="pagination-item">
       <a class="pagination-link pagination-current">10</a>
-      </a>
     </li>
-  </ul>
+  </ol>
 </section>
 <section class="destribution">
   <h2 class="destribution-title">
@@ -294,6 +289,7 @@
 </main>
 <footer class="page-footer">
   <section class="footer-social">
+    <h2 class="visually-hidden">Social-media</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
         <a class="footer-social-link">
@@ -313,8 +309,9 @@
     </ul>
   </section>
   <section class="phone">
-    <a href="tel:+7 (812) 812-12-12">
-      +7 (812) 812-12-12
+    <h2 class="visually-hidden">phone-number</h2>
+    <a href="tel:+7(812)812-12-12">
+      +7(812) 812-12-12
     </a>
   </section>
   <div class="footer-logo">
