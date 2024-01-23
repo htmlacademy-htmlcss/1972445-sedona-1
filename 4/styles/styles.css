@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+body {
+font-family: "PT Sans", sans-serif;
+font-size: 18px;
+line-height: 21px;
+color:#242424;
+background-color: #fbf7f4;
+}
+.page-header {
+color:#242424;
+background-color: #fbf7f4;
+font-weight: 700;
+line-height: 24px;
+}
+.navigation-list {
+  list-style: none;
+}
+.navigation-item {
+  position:relative
+}
+.navigation-link {
+width: 160px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+.navigation-link-search::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/icons-header/search.svg');
+  background-repeat: no-repeat;
+}
+.navigation-link-like::after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/icons-header/like.svg');
+  background-repeat: no-repeat;
+}
+
+.button {
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.hero {
+  color:#ffffff;
+  background: cyan url("../images/index-hero/index-background.jpg") no-repeat;
+background-size: 100% auto;
+
+}
+
+.advantages{
+  text-align: center;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
+text-align: center;
+}
+.advantages-list {
+  list-style: none;
+}
+.section-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+}
+.advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+line-height: 28px;
+text-transform: uppercase;
+text-align: center;
+}
+.advantages-item {
+  background-color: #82B3D3;
+  color:#ffffff;
+}
+.advantages-item-squared,
+.advantages-item-tourists {
+  color:#000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-road {
+background-color: rgba(131, 179, 211, 0.2);
+color:#000000;
+}
+.blog-img {
+  display:block;
+}
+
+
+/*comfortable*/
+.comfortable-list {
+  list-style: none;
+}
+
+
+.comfortable-item:not(:nth-child(2)) {
+ background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+/*hotels*/
+
+.hotels-link {
+  font-size: 20px;
+  line-height: 36px;
+}
+/*destribution*/
+.destribution {
+  background: #000000 url("../images/subscribe.png") no-repeat;
+  background-size: 100% auto;
+  color:#ffffff;
+}
+.email-input {
+  width: 87px;
+  height: 24px;
+  background-color: #F2F2F2;
+
+}
+.email-link {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+
+}
+/*page-footer*/
+.footer-social-list {
+  list-style: none;
+}
+.footer-social-link {
+  color: #000000;
+  text-decoration: none;
+}
+.phone a{
+  font-size: 40px;
+  line-height: 40px;
+text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+/*Catalog*/
+
+.hero-catalog {
+  color:#ffffff;
+  background:#242424 url("../images/catalog-hero/filter-background.png") no-repeat;
+  background-size: 100% auto;
+}
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+line-height: 78px;
+}
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs-link {
+  font-size: 16px;
+  color: inherit;
+  text-decoration: none;
+
+}
+.breadcrumbs-item {
+  position:relative;
+}
+.breadcrumbs-link-home::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url('../images/catalog-hero/home-breadcrumbs.svg');
+  background-repeat: no-repeat;
+}
+.breadcrumbs-link-home::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/catalog-hero/arrow-breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.catalog-title {
+  font-size: 20px;
+  font-weight: 700;
+line-height: 24px;
+}
+.control {
+
+  line-height: 23px;
+}
+.button-form-first {
+background-color: #82B3D3;
+font-size: 16px;
+font-weight: 700;
+line-height: 20px;
+text-transform: uppercase;
+}
+.button-form-last {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: transparent no-repeat;
+  border: none;
+
+}
+.results-search-hotels-title {
+  font-size: 30px;
+  font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
+}
+.sorting-container {
+background-color:#ffffff;
+color:#000000
+}
+.button-hotels {
+  background-color: #fbf7f4;
+  color:#000000
+}
+.hotel-card-list {
+  list-style: none;
+  background-color: #e6e6e6;
+}
+.hotel-card-title {
+  font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+}
+.hotel-price {
+  color: #333333;
+}
+.price {
+  color:#333333;
+}
+.btn-more {
+  font-size: 16px;
+  line-height: 20px;
+}
+.btn-favorites {
+  background-color: #82B3D3;
+  border:#82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+}
+.btn-in-favorites {
+  font-size: 16px;
+  line-height: 20px;
+  background-color:#7DB54F;
+  border:#7DB54F;
+}
+.rating-result {
+  background-color:#ffffff;
+}
+.rating {
+  background-color:#F2F2F2;
+  color:#333333;
+}
+.pagination-link {
+  text-decoration: none;
+  color:#ffffff;
+  background-color: #82B3D3;
+}
+.pagination-current {
+  background-color:#F2F2F2;
+  color:#000000
+}
+.pagination-next {
+  background-color:#F2F2F2;
+  color:#000000;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip:rect(0 0 0 0);
+  overflow: hidden;
+}
