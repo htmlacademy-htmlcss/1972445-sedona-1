@@ -294,7 +294,6 @@ display: flex;
 }
 
 /*Catalog*/
-
 .hero-catalog {
   color: #ffffff;
   background: #242424 url("../images/catalog-hero/filter-background.png") no-repeat;
@@ -375,7 +374,6 @@ padding: 0;
   max-width: 290px;
   margin: 0;
   padding: 0;
-
 }
 
 .filter-button {
