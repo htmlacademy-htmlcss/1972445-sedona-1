@@ -31,15 +31,18 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
-  margin: 0 auto;
   display: flex;
-  width: 1200px;
   color: #242424;
   font-weight: 700;
   line-height: 24px;
@@ -47,6 +50,7 @@ body {
 
 .page-header-logo {
 width: 140px;
+height: 70px;
 margin-left: 70px;
 margin-right: 28px;
 }
@@ -117,8 +121,6 @@ margin-right: 28px;
 }
 
 .hero {
-  width: 1200px;
-  margin: 0 auto;
   color: #ffffff;
   background: #000000 url("../images/index-hero/index-background.jpg") no-repeat;
   background-size: 100% auto;
@@ -130,7 +132,6 @@ margin-right: 28px;
 }
 
 .advantages {
-
   text-align: center;
 }
 
@@ -257,8 +258,6 @@ margin-right: 28px;
 /*page-footer*/
 .page-footer {
 display: flex;
-width: 1060px;
-margin: 0 auto;
 }
 
 .footer-social-list {
@@ -266,6 +265,7 @@ margin: 0 auto;
   padding: 0;
   list-style: none;
   width: 142px;
+  margin-left: 70px;
 }
 
 .footer-social-link {
@@ -287,10 +287,10 @@ margin: 0 auto;
   text-align: center;
 }
 
-.page-footer-logo {
+.page-footer-logo-link {
  width: 115px;
  margin-left: auto;
-
+ margin-right: 70px;
 }
 
 /*Catalog*/
