@@ -46,19 +46,18 @@ body {
   font-weight: 700;
   line-height: 24px;
   margin: 0;
-  padding: 0;
+  padding: 0 70px;
 }
 
 .page-header-logo {
-  display: flex;
-  margin: 0;
-  padding: 0;
+display: block;
+height: 70px;
 width: 140px;
-margin-left: 70px;
 }
 
 .navigation {
   display: flex;
+  gap: 30px;
 }
 
 .navigation-list {
@@ -66,17 +65,17 @@ margin-left: 70px;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 453px;
   flex-wrap: wrap;
-  margin-left: 30px;
+  margin-right: auto;
+
 }
 
 .navigation-user {
-
+  display: flex;
   padding: 0;
   margin: 0;
-  margin-left: auto;
-
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -93,9 +92,9 @@ margin-left: 70px;
   padding: 20px 16px;
 }
 
-.navigation-user .navigation-link {
-  min-width: 44px;
-  min-height: 64px;
+.navigation-link-search,
+.navigation-link-like {
+  padding: 22px 12px;
 }
 
 .button {
@@ -112,40 +111,40 @@ margin-left: 70px;
   padding: 8px 50px;
   border-radius: 4px;
 }
+
 .navigation-user .button {
-  display: block;
-  margin: 0;
+display: block;
+margin: 0;
 width: 92px;
 align-self: center;
 }
 
 .navigation-link-search::before {
+  box-sizing: border-box;
+  display: block;
   content: "";
-  position: absolute;
   width: 20px;
   height: 20px;
   background-image: url("../images/icons-header/search.svg");
   background-repeat: no-repeat;
 }
 
-.navigation-link-like::after {
+.navigation-link-like::before {
+  box-sizing: border-box;
+  display: block;
   content: "";
-  position: absolute;
   width: 20px;
   height: 20px;
   background-image: url("../images/icons-header/like.svg");
   background-repeat: no-repeat;
 }
 
-
+.navigation-icon {
+  position: absolute;
+}
 
 .main-container {
   flex-grow: 1;
-}
-
-.main {
-margin-top: 0;
-
 }
 
 .hero {
@@ -608,6 +607,7 @@ padding: 14px 12px;
 width: 340px;
 padding: 20px;
 margin-right: 20px;
+margin-bottom: 20px;
 }
 
 .hotel-card-item:nth-child(3n) {
@@ -681,6 +681,7 @@ margin-right: 20px;
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
+  padding: 12px 23px;
 }
 
 .pagination-current {
@@ -694,9 +695,28 @@ margin-right: 20px;
 }
 
 .destribution-catalog {
+  width: 684px;
   background-color: #ffffff;
   color:#000000;
   background-image: none;
+  padding: 96px 258px 104px 258px;
+  text-align: center;
+}
+
+.destribution-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.destribution-form {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.destribution-description {
+margin: 0;
+margin-bottom: 54px;
 }
 
 .visually-hidden {
