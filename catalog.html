@@ -33,16 +33,16 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-search" href="#">
+            <a class="navigation-link-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-like" href="#">
+            <a class="navigation-link-like" href="#">
               <span class="visually-hidden">
                 Понравилось
               </span>
@@ -59,7 +59,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main class="main-container">
       <div class="hero-catalog">
         <header class="inner-header">
           <h1 class="inner-header-title">
@@ -158,18 +158,24 @@
           <option>Средний сегмент</option>
           <option>Вип</option>
         </select>
-        <div class="cards-view">
+        <ul class="cards-view">
+          <li>
           <a class="button-view button-cards active" href="#">
-            <span class="visually-hidden">Показать карточки</span>
+          <span class="visually-hidden">Показать карточки</span>
           </a>
+        </li>
+        <li>
           <a class="button-view button-mode" href="#">
             <span class="visually-hidden">Показать карточки и описание</span>
           </a>
+        </li>
+        <li>
           <a class="button-view button-list" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
+        </li>
+        </ul>
         </div>
-      </div>
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
             <a class="hotel-card-link">
@@ -280,15 +286,15 @@
         </ol>
       </section>
       <section class="destribution destribution-catalog">
-        <h2 class="destribution-title">
+        <h2 class="section-title">
           Подпишитесь на рассылку
         </h2>
-        <p class="destribution-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
+        <p class="section-description section-description-destribution">
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="destribution-form">
           <label class="visually-hidden" for="em">Ваш email</label>
-          <input type="email" name="destribution-form" placeholder="Ваш e-mail" id="em" required>
+          <input class="email-input" type="email" name="destribution-form" placeholder="Ваш e-mail" id="em" required>
           <button class="button email-link" type="submit">Подписаться</button>
         </form>
       </section>
