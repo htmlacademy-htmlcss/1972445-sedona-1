@@ -374,6 +374,7 @@ margin-bottom: 20px;
 .page-footer {
 display: flex;
 justify-content: space-between;
+align-items: center;
 flex-wrap: wrap;
 padding: 40px 70px 30px 70px;
 }
@@ -381,6 +382,8 @@ padding: 40px 70px 30px 70px;
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -394,6 +397,7 @@ padding: 40px 70px 30px 70px;
 }
 
 .footer-social-link {
+  display: flex;
   color: #000000;
   text-decoration: none;
 }
@@ -413,7 +417,10 @@ padding: 40px 70px 30px 70px;
 
 .page-footer-logo-link {
  width: 115px;
+}
 
+.page-footer-logo {
+  display: block;
 }
 
 /*Catalog*/
@@ -612,41 +619,70 @@ padding: 0 70px;
   height: 48px;
   border: 2px solid #e5e5e5;
 border-radius: 4px;
-
 }
 
 .hotel-card-list {
-  display: flex;
+  display: grid;
   padding: 0;
   list-style: none;
-  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
-  padding-bottom: 40px;
   gap: 20px;
+  grid-template-columns: repeat(3, 340px);
 }
 
 .hotel-card-item {
-  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 212px 1fr;
+  gap: 16px 20px;
+  margin-top: 16px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-width: 340px;
-padding: 20px;
+  padding: 20px;
+  align-items: start;
+}
+
+.hotel-card-img {
+  display: block;
+  width: 300px;
+  height: 212px;
+  grid-column: 1/-1;
+  grid-row: 1/2;
 
 }
 
+.hotel-card-link {
+  grid-column: 1/-1;
+}
+
 .hotel-card-title {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+
 }
 
 .hotel-price {
   color: #333333;
+  grid-column: 1/2;
+  margin: 0;
+  padding: 0;
 }
 
 .price {
   color: #333333;
+  grid-column: 2/3;
+  justify-self: end;
+}
+
+.hotel-card-item .button {
+  padding: 8px 8px;
 }
 
 .btn-more {
@@ -670,11 +706,21 @@ padding: 20px;
 
 .rating-result {
   background-color: #ffffff;
+
+  grid-column: 1/2;
 }
 
 .rating {
+  font-size: 16px;
+  box-sizing: border-box;
   background-color: #f2f2f2;
   color: #333333;
+  justify-self: center;
+  padding: 8px 22px;
+  margin: 0;
+  border-radius: 4px;
+  text-transform: uppercase;
+  grid-column: 2/3;
 }
 
 .pagination-list {
