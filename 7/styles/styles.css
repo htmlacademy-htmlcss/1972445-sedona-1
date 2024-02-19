@@ -374,6 +374,7 @@ margin-bottom: 20px;
 .page-footer {
 display: flex;
 justify-content: space-between;
+align-items: center;
 flex-wrap: wrap;
 padding: 40px 70px 30px 70px;
 }
@@ -381,6 +382,8 @@ padding: 40px 70px 30px 70px;
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -394,6 +397,7 @@ padding: 40px 70px 30px 70px;
 }
 
 .footer-social-link {
+  display: flex;
   color: #000000;
   text-decoration: none;
 }
@@ -413,7 +417,10 @@ padding: 40px 70px 30px 70px;
 
 .page-footer-logo-link {
  width: 115px;
+}
 
+.page-footer-logo {
+  display: block;
 }
 
 /*Catalog*/
@@ -634,7 +641,6 @@ border-radius: 4px;
 .hotel-card-content {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: min-content auto auto auto;
   gap: 16px 20px;
   margin-top: 16px;
 }
