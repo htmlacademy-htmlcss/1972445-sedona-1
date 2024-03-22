@@ -117,17 +117,17 @@
               <ul class="catalog-list">
                 <li class="catalog-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing" value="hotel" checked>Гостиница
+                    <input class="radio-input" type="radio" name="housing" value="hotel" checked>Гостиница
                   </label>
                 </li>
                 <li class="catalog-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing" value="motel">Мотель
+                    <input class="radio-input" type="radio" name="housing" value="motel">Мотель
                   </label>
                 </li>
                 <li class="catalog-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing" value="apartment">Апартаменты
+                    <input class="radio-input" type="radio" name="housing" value="apartment">Апартаменты
                   </label>
                 </li>
               </ul>
@@ -136,13 +136,40 @@
               <legend class="catalog-title">
                 Стоимость, ₽:
               </legend>
-              <label>От
+              <div class="range">
+
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label"><span class="catalog-text">от</span>
+                  <input class="range-input" type="number" value="0" name="input-min" placeholder="от">
+                </label>
+                <label class="catalog-filter-label"><span class="catalog-text">до</span>
+                  <input class="range-input range-input-right" type="number" value="9000" name="input-max">
+                </label>
+              </div>
+
+              <div class="range-scale">
+              <div class="range-bar" style="left:0px; width: 226px">
+                <button type="button" class="range-toggle toggle-min">
+                  <span class="visually-hidden">
+                    Изменить минимальную цену
+                  </span>
+
+                </button>
+                  <button type="button" class="range-toggle toggle-max">
+                    <span class="visually-hidden">
+                      Изменить максимальную цену
+                    </span>
+                </button>
+              </div>
+            </div>
+              <!-- <label>От
                 <input class="input-min" type="number" value="0">
               </label>
 
               <label>До
                 <input class="input-max" type="number" value="9000">
               </label>
+              -->
             </fieldset>
             <div class="filter-button">
             <button class="button submit" type="submit">Применить</button>
@@ -191,9 +218,8 @@
         </div>
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
-            <a class="hotel-card-link">
               <img class="hotel-card-img" src="images/catalog-images/hotel-1.jpg" width="300" height="212"
-                alt="Ущелье c видом на звездное небо"></a>
+                alt="Ущелье c видом на звездное небо">
               <h3 class="hotel-card-title">
                 Amara Resort & Spa
               </h3>
@@ -211,9 +237,8 @@
             <p class="rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card-item">
-            <a class="hotel-card-link">
               <img class="hotel-card-img" src="images/catalog-images/hotel-2.jpg" width="300" height="212"
-                alt="Скальные породы на фоне неба, облаков и радуги"></a>
+                alt="Скальные породы на фоне неба, облаков и радуги">
               <h3 class="hotel-card-title">
                 Villas at Poco Diablo
               </h3>
@@ -231,9 +256,8 @@
             <p class="rating">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card-item">
-            <a class="hotel-card-link">
               <img class="hotel-card-img" src="images/catalog-images/hotel-3.jpg" width="300" height="212"
-                alt="Скальные породы с зеленью на фоне синего неба"></a>
+                alt="Скальные породы с зеленью на фоне синего неба">
               <h3 class="hotel-card-title">
                 Desert Quail Inn
               </h3>
@@ -249,9 +273,8 @@
             <p class="rating">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-card-item">
-            <a class="hotel-card-link">
               <img class="hotel-card-img" src="images/catalog-images/hotel-4.jpg" width="300" height="212"
-                alt="Скальные породы на фоне звездного небосвода"></a>
+                alt="Скальные породы на фоне звездного небосвода">
               <h3 class="hotel-card-title">
                 GreenTree Inn
               </h3>
