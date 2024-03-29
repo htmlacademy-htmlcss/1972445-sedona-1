@@ -252,68 +252,77 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">
           Поиск гостиницы в Седоне
         </h2>
-        <form class="auth-form" action="https//echo.htmlacademy.ru/" method="post">
-          <p class="field-group">
-            <label class="
-            date arrival" for="
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <label class="date" for="
             arrival-date">Дата заезда:</label>
-            <input class="field" type="text" name="calendar" value="27 апреля 2020" id="arrival-date">
-          </p>
-          <p class="placeholder">
+            <input class="field" type="text" name="calendar" value="27 апреля 2020" id="arrival-date" placeholder="Укажите дату">
+            <p class="placeholder">
               Мы не можем отправить вас в прошлое.
             </p>
-          <p class="field-group">
-            <label class="
-            date departure" for="
+          </div>
+          <div class="field-group">
+            <label class="date" for="
             departure-date">Дата выезда:</label>
-            <input class="field" type="text" name="calendar" value="1 сентября 2023" id="departure-date">
-          </p>
-          <p class="placeholder placeholder-departure">На эти даты есть свободные номера. Пока есть.</p>
+            <input class="field" type="text" name="calendar" value="1 сентября 2023" id="departure-date" placeholder="Укажите дату">
+            <p class="placeholder placeholder-departure">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
           <div class="container-quantity">
-          <p class="field-group quantity-selection">
-            <label class="quantity-label" for="adults">Взрослые:</label><span><svg class="minus-adults" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-              </svg></span>
-              <input type="number" name="adults" value="2" id="adults">
-              <span >
+          <div class="field-group-bottom quantity-selection-adults">
+            <label class="quantity-label" for="adults">Взрослые:</label>
+            <div class="container-bottom">
+            <button class="minus" type="button"><svg class="minus-adults" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0L0 2L14 2V0L0 0Z"/>
+              </svg>
+            <span class="visually-hidden">минус</span></button>
+              <input class="field-number" type="number" name="adults" value="2" id="adults">
+              <button class="plus" type="button">
                 <svg class="plus-adults" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                   </svg>
-              </span>
-          </p>
-          <p class="field-group quantity-selection">
-            <span class="quantity-label">
+                  <span class="visually-hidden">плюс</span>
+              </button>
+            </div>
+          </div>
+          <div class="field-group-bottom quantity-selection-children">
+            <span class="quantity-label-container">
             <label class="quantity-label quantity-label-children" for="children">Дети:</label>
             <span class="tooltip">
-              <button class="tooltip-toggle" type="button">
-                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip">
+                <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
                   </svg>
               </button>
             </span>
+          </span><div class="tooltip-container">
+            <span class="tooltip-text" role="tooltip" id="tooltip">
+              Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются бесплатно.
             </span>
-            <!--
-            <span class="tooltip-text">
-              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-            </span>
-          -->
-            <span><svg class="minus-children" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-              </svg></span>
-              <input type="number" name="adults" value="2" id="children">
-              <span >
+          </div>
+
+          <div class="container-bottom">
+            <button class="minus" type="button">
+              <svg class="minus-adults" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path  d="M0 0L0 2L14 2V0L0 0Z"/>
+                </svg>
+              <span class="visually-hidden">минус</span>
+            </button>
+              <input class="field-number" type="number" name="adults" value="2" id="children">
+              <button class="plus" type="button">
                 <svg class="plus-children" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                   </svg>
-          </p>
+                  <span class="visually-hidden">плюс</span>
+              </button>
+                </div>
+                </div>
         </div>
           <button class="button auth-form-button" type="submit">Найти
           </button>
