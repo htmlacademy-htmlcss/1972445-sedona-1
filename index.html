@@ -291,7 +291,7 @@
             <div class="field-group">
               <label class="date" for="arrival-date">Дата заезда:</label>
               <input class="field" type="text" name="calendar" value="27 апреля 2020" id="arrival-date"
-                placeholder="Укажите дату">
+                placeholder="Укажите дату" required>
               <p class="placeholder">
                 Мы не можем отправить вас в прошлое.
               </p>
@@ -299,7 +299,7 @@
             <div class="field-group">
               <label class="date" for="departure-date">Дата выезда:</label>
               <input class="field" type="text" name="calendar" value="1 сентября 2023" id="departure-date"
-                placeholder="Укажите дату">
+                placeholder="Укажите дату" required>
               <p class="placeholder placeholder-departure">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="container-quantity">
@@ -311,7 +311,7 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
                     <span class="visually-hidden">минус</span></button>
-                  <input class="field-number" type="number" name="adults" value="2" id="adults">
+                  <input class="field-number" type="number" name="adults" value="2" id="adults" required>
                   <button class="plus" type="button">
                     <svg class="plus-adults" width="14" height="14" viewBox="0 0 14 14" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -337,7 +337,6 @@
                   </span>
                 </span>
 
-
                 <div class="container-bottom">
                   <button class="minus" type="button">
                     <svg class="minus-adults" width="14" height="2" viewBox="0 0 14 2" fill="none"
@@ -346,7 +345,7 @@
                     </svg>
                     <span class="visually-hidden">минус</span>
                   </button>
-                  <input class="field-number" type="number" name="adults" value="2" id="children">
+                  <input class="field-number" type="number" name="adults" value="2" id="children" required>
                   <button class="plus" type="button">
                     <svg class="plus-children" width="14" height="14" viewBox="0 0 14 14" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
