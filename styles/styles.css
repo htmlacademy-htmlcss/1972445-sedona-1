@@ -81,6 +81,7 @@ body {
   list-style: none;
   flex-wrap: wrap;
   flex-shrink: 0;
+
 }
 
 .navigation-item {
@@ -322,7 +323,8 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #333333;
+  color: #ffffff;
+
 }
 
 .advantages-title {
@@ -334,6 +336,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+
 }
 
 .advantages .advantages-title::after {
@@ -372,7 +375,7 @@ body {
 
 .advantages-text {
   margin: 0;
-  color: #333333;
+  color: #ffffff;
 }
 
 .advantages-item:not(.inner) {
@@ -919,6 +922,8 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+  appearance: textfield;
+
 }
 
 .plus {
@@ -929,6 +934,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 
 }
 
@@ -961,7 +967,8 @@ body {
   background: #f2f2f2;
 }
 
-.plus:hover .plus-adults {
+.plus:hover .plus-adults,
+.plus:hover .plus-children {
   fill: #000000;
 }
 
