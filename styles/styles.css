@@ -347,7 +347,6 @@ body {
   width: 60px;
   margin-left: auto;
   margin-right: auto;
-
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -369,14 +368,19 @@ body {
   color: #ffffff;
 }
 
+.advantages-text {
+  margin: 0;
+}
+
 .inner .advantages-text {
   color: #333333;
+  margin: 0;
 }
 
 .advantages-text-blue {
   color: #ffffff;
+  margin: 0;
 }
-
 
 .advantages-item:not(.inner) {
   display: flex;
@@ -554,7 +558,6 @@ body {
   width: 452px;
   background-color: #f2f2f2;
   border: none;
-  outline: none;
   padding: 14px 20px;
   border-radius: 4px 0 0 4px;
 }
@@ -562,11 +565,6 @@ body {
 .email-input:hover {
   background-color: #e6e6e6;
   cursor: pointer;
-}
-
-.email-input:active {
-  color: #000000;
-
 }
 
 .email-link {
@@ -803,24 +801,12 @@ body {
   border-radius: 4px;
   border: none;
   background-color: #f2f2f2;
-  outline: none;
 
 }
 
 .field:hover {
   background-color: #e6e6e6;
   opacity: 0.6;
-}
-
-.field:not(:placeholder-shown) {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  outline: none;
-  background-color: #f2f2f2;
-  color: #000000;
-  outline: 2px solid #000000;
-  line-height: 133%;
 }
 
 .date {
@@ -1028,7 +1014,8 @@ body {
   font-size: 20px;
 }
 
-.auth-form-button:hover {
+.auth-form-button:hover,
+.auth-form-button:focus {
   background-color: #68a2ca;
 }
 
@@ -1257,11 +1244,11 @@ body {
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   border: none;
-  outline: none;
   width: 143px;
   height: 48px;
   padding: 12px 20px;
   appearance: textfield;
+  background-color: #f2f2f2;
 }
 
 .range-input-right {
@@ -1273,13 +1260,6 @@ body {
   cursor: pointer;
   border-radius: 4px 0 0 4px;
 }
-
-.range-input:not(:placeholder-shown) {
-  outline: 2px solid #000000;
-  background-color: #f2f2f2;
-}
-
-
 
 .catalog-filter-label {
   position: relative;
