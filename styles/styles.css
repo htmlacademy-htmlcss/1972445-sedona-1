@@ -323,7 +323,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #ffffff;
+  color: #333333;
 
 }
 
@@ -373,10 +373,10 @@ body {
   color: #333333;
 }
 
-.advantages-text {
-  margin: 0;
+.advantages-text-blue {
   color: #ffffff;
 }
+
 
 .advantages-item:not(.inner) {
   display: flex;
@@ -538,6 +538,7 @@ body {
 
 .section-description-destribution {
   margin-bottom: 54px;
+  color: #ffffff;
 }
 
 .destribution-form {
@@ -553,6 +554,7 @@ body {
   width: 452px;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
   padding: 14px 20px;
   border-radius: 4px 0 0 4px;
 }
@@ -562,14 +564,9 @@ body {
   cursor: pointer;
 }
 
-.email-input:not(:placeholder-shown) {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  outline: none;
-  background-color: #f2f2f2;
+.email-input:active {
   color: #000000;
-  border: 2px solid #000000;
+
 }
 
 .email-link {
@@ -1260,6 +1257,7 @@ body {
   border-radius: 4px 0 0 4px;
   box-sizing: border-box;
   border: none;
+  outline: none;
   width: 143px;
   height: 48px;
   padding: 12px 20px;
@@ -1276,7 +1274,7 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-.range-input:active {
+.range-input:not(:placeholder-shown) {
   outline: 2px solid #000000;
   background-color: #f2f2f2;
 }
@@ -1373,6 +1371,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.control-input:disabled {
+  background-color: #e5e5e5;
+}
+
 .radio-input {
   appearance: none;
   border-radius: 100%;
@@ -1390,14 +1392,13 @@ body {
   background-position: 50% 50%;
 }
 
-.radio-input:focus {
-  border: 3px solid #83b3d3;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-}
-
 .radio-input:active {
   border: 2px solid #83b3d3;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.radio-input:disabled {
+  background-color: #e5e5e5;
 }
 
 .range-scale {
@@ -1429,11 +1430,6 @@ body {
 .range-toggle:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 
-}
-
-.range-toggle:focus {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  border: 3px solid #83b3d3;
 }
 
 .range-toggle:active {
@@ -1506,8 +1502,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-right: auto;
+  margin-right: 200px;
   padding: 0;
+  max-width: 338px;
 }
 
 .menu-hotels {
@@ -1562,7 +1559,7 @@ body {
   list-style: none;
   margin-left: 70px;
   gap: 8px;
-  max-width: 220px;
+  max-width: 160px;
 
 }
 
